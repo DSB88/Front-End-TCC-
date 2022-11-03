@@ -1,0 +1,46 @@
+<form>
+    <h1>CRIANDO NOVO DEVOCIONAL</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Título Devocional</mat-label>
+        <input matInput [(ngModel)]="devocional.devotionalTitle" type="text" name="tituloDevocional"
+ placeholder="Ex. Fé inabalável">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto Versículo</mat-label>
+        <textarea matInput [(ngModel)]="devocional.textVersicle" type="text" name="textoVersiculo"
+ placeholder="Ex. Vale de Ossos Secos"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto Devocional</mat-label>
+        <textarea matInput [(ngModel)]="devocional.devotionalText" type="text" name="textoDevocional"
+ placeholder="Ex. O profeta Ezequiel recebe o chamado de Deus e se vê no Vale dos Ossos Secos."></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto de Oração</mat-label>
+        <textarea matInput [(ngModel)]="devocional.prayerText" type="text" name="textoOracao"
+ placeholder="Ex. Oremos para que a graça de Deus..."></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Data do Post</mat-label>
+        <textarea matInput [(ngModel)]="devocional.postDate" type="text" name="dataPostagem"
+ placeholder="Ex. 18/05/2022"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Imagem do Post</mat-label>
+        <textarea matInput [(ngModel)]="devocional.imgURL" type="text" name="imgURL"
+ placeholder="Ex. https://blog.anywhere.com.br/wp-content/uploads/2022/02/imagem.jpg"></textarea>
+    </mat-form-field>
+
+
+    <div class="buttons">
+        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary"> CRIAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

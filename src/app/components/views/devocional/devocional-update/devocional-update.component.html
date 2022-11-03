@@ -1,0 +1,45 @@
+<form>
+    <h1>ATUALIZANDO DEVOCIONAL</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Título Devocional</mat-label>
+        <input matInput [(ngModel)]="devocional.devotionalTitle" type="text" name="devotionalTitle"
+ placeholder="Ex. Fé inabalável">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto Versículo</mat-label>
+        <textarea matInput [(ngModel)]="devocional.textVersicle" type="text" name="textVersicle"
+ placeholder="Ex. Vale de Ossos Secos"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto Devocional</mat-label>
+        <textarea matInput [(ngModel)]="devocional.devotionalText" type="text" name="devotionalText"
+ placeholder="Ex. O profeta Ezequiel recebe o chamado de Deus e se vê no Vale dos Ossos Secos."></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto de Oração</mat-label>
+        <textarea matInput [(ngModel)]="devocional.prayerText" type="text" name="prayerText"
+ placeholder="Ex. Oremos para que a graça de Deus..."></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Data do Post</mat-label>
+        <textarea matInput [(ngModel)]="devocional.postDate" type="text" name="postDate"
+ placeholder="Ex. 18/05/2022"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Imagem do Post</mat-label>
+        <textarea matInput [(ngModel)]="devocional.imgURL" type="text" name="imgURL"
+ placeholder="Ex. imagem"></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()" class="mat-elevation-z8" mat-stroked-button color="primary"> ATUALIZAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>
