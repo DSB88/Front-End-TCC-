@@ -28,8 +28,8 @@ mat-raised-button color="accent">Novo Evento</button>
 
       <!-- Weight Column -->
       <ng-container matColumnDef="date">
-        <th mat-header-cell *matHeaderCellDef>DATA/HORA DO EVENTO</th>
-        <td mat-cell *matCellDef="let row">{{ row.date | Date }}</td>
+        <th mat-header-cell *matHeaderCellDef>DATA DO EVENTO</th>
+        <td mat-cell *matCellDef="let row">{{ row.date }}</td>
       </ng-container>
 
       <ng-container matColumnDef="imgURL">

@@ -40,8 +40,8 @@ mat-raised-button color="primary">Novo Devocional</button>
 
       <!-- Weight Column -->
       <ng-container matColumnDef="postDate">
-        <th mat-header-cell *matHeaderCellDef>DATA / HORA DA POSTAGEM</th>
-        <td class="post-date" mat-cell *matCellDef="let row">{{row.postDate | Date}}</td>
+        <th mat-header-cell *matHeaderCellDef>DATA DA POSTAGEM</th>
+        <td class="post-date" mat-cell *matCellDef="let row">{{row.postDate}}</td>
       </ng-container>
  
       <ng-container matColumnDef="imgURL">
